@@ -1,0 +1,887 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* ----- HEADER SECTION -------- */
+
+header {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #698F3F;
+    border-bottom: 6px soli ;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/image-main.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-heading {
+    text-align: center;
+    width: 50%;
+}
+
+.explore {
+    margin: 2rem 0;
+    height: 4rem;
+    width: 8rem;
+    background-color: #698F3F;
+    outline: 0.2rem solid #698F3F;
+    outline-offset: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: none;
+    animation: button 5s ease-in-out 1;
+}
+
+.explore a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 0.2rem;
+}
+
+.heading-two {
+    color: #698f3f;
+    font-size: 2.5rem;
+    font-family: 'handlee', Verdana, Geneva, Tahoma, sans-serif;
+    animation: slideRight 5s ease-in-out 1;
+}
+
+.heading-one {
+    color: white;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px black;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: 'Roboto slab', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    animation: slideLeft 5s ease-in-out 1;
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(-1000px);
+    }
+    50% {
+        transform: translateX(200px);
+    }
+    75% {
+        transform: translateX(-50px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(1000px);
+    }
+    50% {
+        transform: translateX(-200px);
+    }
+    75% {
+        transform: translateX(50px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes button {
+    0% {
+        transform: scale(2);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* NAV BAR */ 
+
+.nav-btn {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    margin: 1rem 1.3rem;
+    font-size: 3rem;
+    color: #698F3F;
+    animation: bounce 2s ease infinite;
+    cursor: pointer;
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.navbar {
+    background-color: #e5e5e5;
+    height: 100vh;
+    width: 20rem;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    position: fixed;
+    top: 0;
+    left: -400px;
+    border-right: 0.5rem solid #698f3f;
+    border-bottom: 0.5rem solid #698F3F;
+    transition: all 0.4s linear;
+}
+
+.hide {
+    left: 0px;
+    transition: all 0.4s linear;
+}
+
+.nav-items {
+    list-style: none;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: #698F3F;
+    font-family: 'handlee', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.5rem;
+}
+
+.nav-items a:hover {
+    color: #3A3E3B;
+    transition: all 0.3s linear;
+
+    
+}
+
+.nav-close {
+    font-size: 2.5rem;
+    width: 2rem;
+    padding: 1rem 0;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+/* END OF NAVBAR */ 
+
+/* ----- DETAILS SECTION ------ */ 
+
+.details {
+    background-color: #e5e5e5;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.info {
+    width: 29.73rem;
+    text-align: center;
+    transition: all 0.4s linear;
+}
+
+.info:hover {
+    background-color: #698F3F;
+}
+
+.info:hover > .info-heading {
+    color: white;
+}
+
+.info:hover > .icon {
+    position: relative;
+    top: -5px;
+}
+
+.icon {
+    padding: 1.5rem 0;
+    font-size: 2.5rem;
+    transition: all 0.5s linear;
+}
+
+.info-heading {
+    color: #698F3F;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-family: 'Roboto slab', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: all 0.4s linear;
+}
+
+.info p {
+    margin: 2rem auto;
+    font-family: 'Roboto', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 70%;
+}
+
+/* ---- ABOUT SECTION ---- */
+
+.about-center {
+    display: flex;
+    width: 95vw;
+    margin: 0 auto;
+    padding: 5rem 0 5rem 0;
+    max-width: 1170px;
+}
+
+.about-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.about-img img {
+    border: 0.5rem solid #698F3F;
+    border-radius: 1rem;
+    width: 70%;
+}
+
+.about-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    
+}
+
+.about h3 {
+    font-family: 'handlee', Verdana, Geneva, Tahoma, sans-serif;
+    color: #698F3F;
+    font-size: 2rem;
+    margin-bottom: -1rem;
+}
+
+.about h2 {
+    font-family: 'Roboto slab', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2.5rem;
+}
+
+.about p {
+    width: 60%;
+    font-family: 'Roboto', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 1rem 0;
+}
+
+.about-btn {
+    margin: 2rem 0;
+    height: 4rem;
+    width: 8rem;
+    background-color: #698F3F;
+    outline: 0.2rem solid #698F3F;
+    outline-offset: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: none;
+    transition: all 0.3s linear;
+}
+
+.learn-btn {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 0.2rem;
+    transition: all 0.3s linear;
+}
+
+.about-btn:hover{
+    background-color: #98bb72;
+    outline: 0.2rem solid #98bb72;
+}
+
+.about-btn:hover > a {
+    color: #3A3E3B;
+}
+
+/* ---- PRODUCTS SECTION ----*/ 
+
+.products {
+    background-color: #3A3E3B;
+}
+
+.products-center {
+    padding: 4rem 0;
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.products-info {
+    width: 30%;
+    margin: 2rem;
+}
+
+.products-info h3 {
+    font-family: 'handlee', Verdana, Geneva, Tahoma, sans-serif;
+    color: #698F3F;
+    font-size: 2rem;
+    margin-bottom: -1rem;
+}
+
+.products-info h2 {
+    font-family: 'Roboto slab', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2.5rem;
+    color: white;
+    text-transform: capitalize;
+}
+
+.products-info p {
+    font-family: 'Roboto', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    margin: 1rem 0;
+}
+
+.products-btn {
+    margin: 2rem 0;
+    height: 3rem;
+    width: 9rem;
+    background-color: #698F3F;
+    outline: 0.2rem solid #698F3F;
+    outline-offset: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: none;
+    transition: all 0.3s linear;
+}
+
+.products-btn a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 0.2rem;
+    transition: all 0.3s linear;
+}
+
+.products-btn:hover{
+    background-color: #98bb72;
+    outline: 0.2rem solid #98bb72;
+}
+
+.products-btn:hover > a {
+    color: #3A3E3B;
+}
+
+.products-selection {
+    display: flex;
+    width: 70%;
+}
+
+.product {
+    width: 33.33%;
+    padding: 1.5rem 1rem 0 1rem;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 0.4rem;
+}
+
+.product-title {
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Roboto slab', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 0.2rem;
+}
+
+.product-price {
+    color: #698F3F;
+    font-family: 'Roboto slab', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* ------ SERVICES SECTION ------- */ 
+
+.services {
+    background-color: #e5e5e5;
+}
+
+.services-header {
+    text-align: center;
+    padding-top: 4rem;
+}
+
+.services-header h3 {
+    color: #698F3F;
+    font-family: 'handlee', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    margin-bottom: -1rem;
+}
+
+.services-header h2 {
+    font-family: 'Roboto slab', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2.5rem;
+}
+
+.services-center {
+    display: flex;
+    justify-content: space-evenly;
+    width: 95vw;
+    margin: 0 auto;
+    max-width: 1170px;
+    padding: 4rem 0;
+}
+
+.service {
+    border: 0.3rem solid #698F3F;
+    border-radius: 1rem;
+    width: 33%;
+    padding: 0.2rem;
+    margin: 2rem 1.5rem;
+    box-shadow: 5px 5px 2px 0px #3A3E3B;
+    position: relative;
+}
+
+.service img {
+    width: 100%;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.service-icon {
+    position: absolute;
+    bottom: 37%;
+    left: 39%;
+    border-radius: 50%;
+    border: 0.2rem solid #698F3F;
+    box-shadow: 10px 10px 5px 0 #3A3E3B;
+    background-color: orange;
+    padding: 1.8rem 1.8rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-icon .icon {
+    font-size: 1.7rem;
+    color: #3A3E3B;
+    text-align: center;
+}
+
+.service-info {
+    background-color: #698F3F;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    text-align: center;
+    padding: 2.5rem 0 1rem 0;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+}
+
+.service-info h4 {
+    color: white;
+    font-family: 'Roboto slab', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 0.25rem;
+    padding-top: 1rem;
+}
+
+.service-btn {
+    background-color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 0.8rem 2rem;
+    color: #698F3F;
+    font-weight: bold;
+    border: 0.2rem solid white;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    margin-top: 1.5rem;
+}
+
+.service-btn:hover {
+    background-color: #698F3F;
+    color: white;
+}
+
+
+/*----------CONTACT FORM SECTION ---------*/
+
+.form-section {
+    background-color: white;
+}
+
+.form-header {
+    text-align: center;
+    padding-top: 4rem;
+    margin-bottom: -2rem;
+}
+
+.form-header h3 {
+    color: #698F3F;
+    font-family: 'handlee', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    margin-bottom: -1rem;
+}
+
+.form-header h2 {
+    font-family: 'Roboto slab', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2.5rem;
+}
+
+.center-form {
+    width: 80vw;
+    margin: 0 auto;
+    max-width: 1170px;
+    padding: 4rem 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.center-form article {
+    width: 50%;
+    margin: 2rem;
+    padding-top: 5rem;
+}
+
+.contact-heading {
+    color: #698F3F;
+    font-family: 'handlee', Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 0.5rem;
+    font-size: 1.7rem;
+}
+
+.contact-details {
+    font-size: 1.3rem;
+    font-family: 'Roboto slab', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #3A3E3B;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    letter-spacing: 0.1rem;
+}
+
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #698F3F;
+    outline: none;
+    margin-bottom: 2.5rem;
+    padding: 1.3rem 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #698F3F;
+    letter-spacing: 0.25rem;
+    font-family: 'Roboto slab', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+input::placeholder {
+    color: #698F3F;
+}
+
+
+.form-btn {
+    background-color: #698F3F;
+    text-decoration: none;
+    text-transform: uppercase;
+    height: 3rem;
+    width: 9rem;
+    padding: 0.8rem 1.2rem;
+    color: white;
+    font-weight: bold;
+    outline: 0.2rem solid #698F3F;
+    outline-offset: 4px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    margin-top: 2rem;
+    border: none;
+    letter-spacing: 0.2rem;
+}
+
+.form-btn:hover {
+    background-color: #98bb72;
+    outline: 0.2rem solid #98bb72;
+    color: #3A3E3B;
+}
+
+
+/* ------ FOOTER SECTION ---------*/
+
+footer {
+    background-color: #3A3E3B;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 4rem;
+    height: 30vh;
+}
+
+footer .fab {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 1rem 2rem 0;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+footer .fab:hover {
+    color: #698F3F;
+}
+
+.links p {
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: white;
+    font-family: 'Roboto', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.links .ben{
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s linear;
+}
+
+.links .footer-para {
+    text-transform: capitalize;
+}
+
+.ben:hover {
+    color: #698F3F;   
+}
+
+.links span {
+    color: #698F3F;
+}
+
+/* -------- MEDIA QUERIES ------ */
+
+@media screen and (min-width: 1200px) {
+    .info {
+        width: 25%;
+    }
+    
+}
+
+@media screen and (max-width: 1200px) {
+    .info {
+        width: 50%;
+    }
+
+    .about-img {
+        padding: 2rem;
+        width: 50%;
+    }
+
+    .about-img img {
+        width: 80%;
+    }
+
+    .products-center {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .products-info {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .products-selection {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .service-icon {
+        bottom: 39%;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .about-img img{
+        width: 90%;
+    }
+
+    .services-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .service {
+        width: 45%;
+    }
+
+    .service-icon {
+        bottom: 32%;
+        left: 40%;
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .service-icon {
+        bottom: 35%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-img img{
+        width: 100%;
+    }
+
+    .about-center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-img {
+        width: 80%;
+    }
+
+    .about-info {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-icon {
+        bottom: 37%;
+        left: 39%;
+    }
+
+    .form-section {
+        margin-top: -5rem;
+        padding: 0;
+    }
+
+    .form-btn {
+        margin: 2rem;
+    }
+
+    .center-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form {
+        padding-top: -20rem;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .info {
+        width: 100%; 
+    }
+
+    .products-center {
+        text-align: center;
+    }
+
+    .products-selection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        width: 60%;
+    }
+
+    .service {
+        width: 60%;
+    }
+
+    .service-icon {
+        bottom: 34%;
+        left: 40%;
+    }
+
+    
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        width: 14rem;
+    }
+    .service {
+        width: 60%;
+    }
+    
+    .service-icon {
+        bottom: 37%;
+        left: 40%;
+    }
+
+    footer {
+        height: 43vh;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .heading-one,
+    .heading-two {
+    font-size: 2rem;
+    }
+
+    .product {
+        width: 70%;
+    }
+
+    .service {
+        width: 70%;
+    }
+
+    .contact-form {
+        width: 70vw;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .about-info {
+        width: 100%;
+    }
+    .about-img {
+        width: 100%;
+    }
+
+    
+}
+
+@media screen and (max-width: 400px) {
+    .navbar {
+        width: 12rem;
+    }
+
+    .product {
+        width: 80%;
+    }
+    .service-icon {
+        bottom: 42%;
+        left: 37%;
+    }
+
+
+}
+
