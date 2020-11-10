@@ -7,7 +7,7 @@ const results = document.querySelector('.movie-results');
 // Function to bring in data from API 
 function getMovie(e) {
     const apiKey = 'a1b799b';
-    const url = `https://www.omdbapi.com/?apikey=${apiKey}&s=${input.value}`;
+    const url = `HTTPS://www.omdbapi.com/?apikey=${apiKey}&s=${input.value}`;
 
     e.preventDefault();
 
