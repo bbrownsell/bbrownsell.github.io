@@ -75,7 +75,7 @@ body {
 /* ------ HERO SECTION --------- */
 
 .hero {
-    background-image: linear-gradient(rgba(44, 130, 201, 0.6), rgba(0, 0, 0, 0.7)), url(/DSCN4406.jpg);
+    background-image: linear-gradient(rgba(44, 130, 201, 0.6), rgba(0, 0, 0, 0.7)), url(/images/DSCN4406_2_50.jpg);
     background-size: cover;
     background-position: bottom;
     min-height: calc(100vh - 67px);
