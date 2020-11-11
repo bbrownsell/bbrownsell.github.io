@@ -1,0 +1,575 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', verdana;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+/* ------- HEADER SECTION --------- */
+
+.navbar {
+    background-color: #f7f7f7;
+}
+
+.nav-center {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bad {
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 2.8rem;
+}
+
+.boys {
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 3rem;
+    color:rgba(44, 130, 201);
+}
+
+.nav-links{
+    width: 30rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.links {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.25rem;
+    letter-spacing: 0.1rem;
+    transition: 0.3s all linear;
+}
+
+.links:hover {
+    color: rgba(44, 130, 201);
+    text-shadow: 1px 1px 1px gray;
+}
+
+.nav-icons-container {
+    width: 7rem;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-icons {
+    color: rgba(44, 130, 201);
+    transition: 0.3s all linear;
+}
+
+.nav-icons:hover {
+    font-size: 1.35rem;
+    text-shadow: 1px 1px 1px gray;;
+
+}
+
+/* ------ HERO SECTION --------- */
+
+.hero {
+    background-image: linear-gradient(rgba(44, 130, 201, 0.6), rgba(0, 0, 0, 0.7)), url(/DSCN4406.jpg);
+    background-size: cover;
+    background-position: bottom;
+    min-height: calc(100vh - 67px);
+    width: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-title {
+    font-weight: 500;
+    color: #f7f7f7;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    text-shadow: 2px 1px 1px black;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.hero-text {
+    color: #f7f7f7;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    width: 70%;
+}
+
+.hero-btn {
+    margin-top: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.5rem;
+    border: 2px solid #f7f7f7;
+    text-decoration: none;
+    color: #f7f7f7;
+    padding: 1rem;
+    transition: 0.5s all linear;
+}
+
+.hero-btn:hover{
+    background-color: #f7f7f7;
+    color: rgba(44, 130, 201);
+}
+
+
+/* ------ CREW SECTION --------- */
+
+#crew-section {
+    width: 75%;
+    margin: 5rem auto;
+}
+
+.crew-title-container {
+    text-align: center;
+}
+
+.crew-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 3rem;
+    letter-spacing: 0.05rem;
+}
+
+.crew-span {
+    color:rgba(44, 130, 201);
+}
+
+.crew-section-center {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem;
+}
+
+.offset-border {
+    border: 8px solid rgba(44, 130, 201);
+    position: absolute;
+    z-index: -1;
+    height: 300px;
+    width: 300px;
+    left: 410px;
+    top: 1100px;
+}
+
+.carousel-container {
+    overflow: hidden;
+    position: relative;
+    width: 300px;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.carousel-slide {
+    display: flex;
+    width: 100%;
+    height: 300px;
+}
+
+.crew-img-container img {
+    margin: 0 25%;
+}
+
+#prevBtn {
+    position: absolute;
+    top: 45%;
+    left: 2%;
+    z-index: 10;
+    font-size: 2.5rem;
+    opacity: 0.8;
+    cursor: pointer;
+    color: #f7f7f7;
+}
+
+#nextBtn {
+    position: absolute;
+    top: 45%;
+    right: 2%;
+    z-index: 10;
+    font-size: 2.5rem;
+    opacity: 0.8;
+    cursor: pointer;
+    color: #f7f7f7;
+}
+
+.carousel-container-info {
+    overflow: hidden;
+    position: relative;
+    width: 500px;
+}
+
+.carousel-slide-info {
+    display: flex;
+    width: 497px;
+    height: 300px;
+}
+
+
+.crew-name {
+    font-size: 2.25rem;
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+.crew-role {
+    text-align: left;
+    font-size: 1.4rem;
+    color: rgba(44, 130, 201);
+    text-shadow: 1px 1px 1px lightgray;
+}
+
+.crew-name-info {
+    text-align: left;
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+.Pete, .Anthony, .Mark, .Chris, .Paul {
+    flex-shrink: 0;
+    width: 500px;
+    height: 100%;
+    padding: 2rem;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+
+/* ------ GALLERY SECTION --------- */
+
+#gallery {
+    background-color: #f7f7f7;
+    padding-top: 3rem;
+}
+
+.gallery-title-container {
+    text-align: center;
+}
+
+.gallery-title-container h2 {
+    font-size: 2.5rem;
+    letter-spacing: 0.10rem;
+}
+
+.span {
+    color: rgba(44, 130, 201);
+}
+
+.gallery-center {
+    margin: 4rem 0;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(2, 20rem);
+}
+
+.gallery-img-container {
+    background-color: rgba(44, 130, 201);
+    overflow: hidden;
+}
+
+.gallery-img-container:focus {
+    position: relative;
+    z-index: 2;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    transition: transform 750ms cubic-bezier(.5, 0, .5, 1), opacity 250ms linear;
+    cursor: pointer;
+}
+
+
+.gallery-img:hover,
+.gallery-img-container:focus .gallery-img {
+    transform: scale(1.2);
+    opacity: 0.75;
+}
+
+
+.gallery-img-container:hover:before {
+    height: 100%;
+    transition: all 0.5s linear;
+}
+    
+
+/* ------ CONTACT SECTION --------- */
+
+#contact-us {
+    width: 70%;
+    margin: 5rem auto 1rem;
+    text-align: center;
+}
+
+.contact-title {
+    font-size: 2.5rem;
+    letter-spacing: 0.10rem;
+}
+
+.input-group {
+    margin: 2.5rem 0 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.form-control {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border: 2px solid rgba(44, 130, 201);
+    text-transform: uppercase;
+    outline: none;
+    padding: 0.3rem;
+    width: 25rem;
+}
+
+.submit-btn {
+    cursor: pointer;
+    width: 6rem;
+    padding: 0.4rem;
+    border: 2px solid rgba(44, 130, 201);
+    background-color: transparent;
+    border-left: none;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    outline: none;
+}
+
+.submit-btn:hover {
+    background-color: rgba(44, 130, 201);
+    color: white;
+    transition: all 0.5s linear;
+}
+
+/* ------ ABOUT SECTION (PAGE 2) --------- */
+
+#about {
+    margin: 3rem 0 3rem 0;
+}
+
+.about-title {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.about-title h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.10rem;
+}
+
+.about-boys {
+    color: rgba(44, 130, 201);
+}
+
+.about-container {
+    display: flex;
+}
+
+.about-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.about-img img {
+    width: 70%;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 0 1.5rem 0 0;
+    margin-right: 2.5rem;
+}
+
+.about-text p {
+    font-size: 1.25rem;
+    margin: 1rem 0 1rem 0;
+    font-weight: 400;
+}
+
+/* ------ RESULTS SECTION --------- */
+
+#results {
+    background-color: #f7f7f7;
+    padding: 2rem;
+}
+
+.results-title {
+    margin: 0 auto;
+    text-align: center;
+    letter-spacing: 0.10rem;
+}
+
+.results-title h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.results-boys {
+    color: rgba(44, 130, 201);
+}
+
+.results-info {
+    width: 75%;
+    margin: 0 auto 4rem;
+    border: 2px solid black;
+    padding: 1rem;
+    box-shadow: 5px 5px 5px 5px gray;
+}
+
+.results-heading {
+    font-size: 1.75rem;
+    margin: 0.75rem 0 0.75rem 0;
+}
+
+.results-sub {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.results-info ul {
+    list-style: none;
+}
+
+.results-info li {
+    padding: 0.25rem 0 0.25rem 0;
+}
+
+.results-info a {
+    text-decoration: none;
+    color: rgba(44, 130, 201);
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.results-info a:visited {
+    color: rgba(44, 130, 201);
+}
+
+.results-info a:hover {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/* -------- LINKS SECTION --------- */
+
+#links {
+    padding: 2rem;
+    width: 75%;
+    margin: 0 auto 2rem;
+}
+
+.links-title {
+    margin: 0 auto;
+    text-align: center;
+    letter-spacing: 0.10rem;
+}
+
+.links-title h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.links-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;;
+    margin: 4rem auto;
+    text-align: center;
+}
+
+.links-list h3 {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.corby-links, 
+.yacht-links,
+.general-links {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+    width: 35%;
+}
+
+.links-list a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    margin: 0.3rem;
+    color: rgba(44, 130, 201);
+}
+
+.links-list a:visited {
+    color: rgba(44, 130, 201);
+}
+
+.links-list a:hover{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+
+/* ------ FOOTER SECTION --------- */
+
+footer {
+    background-color: #222;
+    text-align: center;
+    color: white;
+    padding: 5rem;
+}
+
+.footer-links {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.25rem;
+    letter-spacing: 0.1rem;
+    transition: 0.3s all linear;
+    margin: 0.5rem;
+}
+
+.footer-links:hover {
+    color: rgba(44, 130, 201);
+}
+
+.footer-icons-container {
+    margin: 1rem;
+}
+
+.footer-icons {
+    color: white;
+    margin: 0.25rem;
+    font-size: 1.5rem;
+    transition: 0.3s all linear;
+}
+
+.footer-icons:hover {
+    color: rgba(44, 130, 201);
+}
+
+.copyright {
+    letter-spacing: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+
