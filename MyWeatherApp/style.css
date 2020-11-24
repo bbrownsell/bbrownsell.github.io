@@ -20,8 +20,8 @@
 .container {
     border: 3px solid lightblue;
     border-radius: 1rem;
-    height: 400px;
-    width: 600px;
+    width: 40%;
+    height: 40%;
     background-color: rgba(119, 140, 179, 0.411);
     display: flex;
     flex-direction: column;
@@ -69,8 +69,6 @@ h1 {
     display: flex;
     justify-content: space-evenly;
     margin-top: 1rem;
-    width: 500px;
-    height: 150px;
 }
 
 .temp,
@@ -78,8 +76,7 @@ h1 {
 .icon {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 150px;
+    align-items: center;;
     border-radius: 1rem;
     padding: 1rem;
     text-align: center;
@@ -98,3 +95,70 @@ h1 {
     width: 6rem;
 }
 
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    #input {
+        width: 12rem;
+    }
+
+    .temp {
+        font-size: 2rem;
+    }
+    
+    .weather-description{
+        font-size: 1.25rem;
+    }
+    
+    .icon-img {
+        height: 3rem;
+        width: 3rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    /* #searchBtn {
+        display: block;
+        margin: 0 auto;
+    } */
+    .weather {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #input {
+        width: 8rem;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .weather {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #input {
+        width: 8rem;
+    }
+
+    #label {
+        font-size: 1rem;
+        display: block;
+    }
+}

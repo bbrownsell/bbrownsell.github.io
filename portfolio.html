@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+    <!--------- HEADER ------------>
+    <header id="header">
+        <!-- <a href="index.html" class="header-title-link">Portfolio by <strong>Ben Brownsell</strong></a> -->
+        <ul class="links">
+            <li><a href="index.html" class="link">About</a></li>
+            <li><a href="portfolio.html" class="link">Portfolio</a></li>
+            <li><a href="contact.html" class="link">Contact</a></li>
+        </ul>
+
+        <ul class="icons">
+            <li class="icon-list"><a href="https://github.com/bbrownsell" class="icon-links"><i class="fab fa-github icon"></i></a></li>
+            <li class="icon-list"><a href="#" class="icon-links"><i class="fab fa-linkedin icon"></i></a></li>
+            <li class="icon-list"><a href="mailto:ben.brownsell@hotmail.co.ukS" class="icon-links"><i class="fas fa-envelope icon"></i></a></li>
+        </ul>
+    </header>
+
+    <!--------- PORTFOLIO SECTION ------------->
+
+    <section id="portfolio">
+
+        <!-- <div class="portfolio-header">
+            <h2>Portfolio</h2>
+        </div> -->
+
+        <div class="portfolio-content">
+            <article>
+                <a href="http://bbrownsell.com/AmbersTeaRoom/" target="_blank">
+                    <img src="/Portfolio-Images/tearoom.jpg" alt="a tea room website">
+                </a>
+                <div class="article-content">
+                    <h3>Landing Page</h3>
+                    <div class="article-text">
+                        <p>This was a website landing Page I built using HTML, CSS and Javascript. Javascript was used for the sliding navigation bar, and I also included some cool animations and transitions using CSS. Overall this was a fun website to build.</p>
+                    </div>
+                </div>
+                <div class="article-icon-container">
+                    <a href="https://github.com/bbrownsell/bbrownsell.github.io/tree/main/AmbersTeaRoom" target="_blank">
+                        <i class="fab fa-github-alt"></i>
+                        <p>GitHub</p>
+                    </a>
+                </div>
+                <div class="article-icon-container">
+                    <a href="http://bbrownsell.com/AmbersTeaRoom/" target="_blank">
+                        <i class="fas fa-cloud"></i>
+                        <p>Visit the site</p>
+                    </a>
+                </div>
+            </article>
+
+            <article>
+                <a href="http://bbrownsell.com/MyBootstrapWebsite/" target="_blank">
+                    <img src="Portfolio-Images/bootstrap.jpg" alt="a website made using bootstrap">
+                </a>
+                    <div class="article-content">
+                        <h3>Bootstrap Website</h3>
+                        <div class="article-text">
+                            <p>I built this website using Bootstrap, where I learnt the fundamentals of the framework, including how to work with and customise pre built components.  This showed me that you don't always have to create everything from scratch.</p>
+                        </div>    
+                    </div>
+                    <div class="article-icon-container">
+                        <a href="https://github.com/bbrownsell/bbrownsell.github.io/tree/main/MyBootstrapWebsite" target="_blank">
+                            <i class="fab fa-github-alt"></i>
+                            <p>GitHub</p>
+                        </a>
+                    </div>
+                    <div class="article-icon-container">
+                        <a href="http://bbrownsell.com/MyBootstrapWebsite/" target="_blank">
+                            <i class="fas fa-cloud"></i>
+                            <p>Visit the site</p>
+                        </a>
+                    </div>
+            </article>
+
+            <article>
+                <a href="#" target="_blank">
+                    <img src="/Portfolio-Images/expense.jpg" alt="an expense tracker">
+                </a>
+                <div class="article-content">
+                    <h3>Expense Tracker</h3>
+                    <div class="article-text">
+                        <p>An expense tracking application that allowed me to practice working with data that was input dynamically by the user. This project helped me get to grips with the basics of Javascript, and DOM manipulation.</p>
+                    </div>
+                </div>
+                <div class="article-icon-container">
+                    <a href="https://github.com/bbrownsell/bbrownsell.github.io/tree/main/Expenses%20tracker" target="_blank">
+                        <i class="fab fa-github-alt"></i>
+                        <p>GitHub</p>
+                    </a>
+                </div>
+                <div class="article-icon-container">
+                    <a href="">
+                        <i class="fas fa-cloud"></i>
+                        <p>Visit the site</p>
+                    </a>
+                </div>
+            </article>
+
+            <article>
+                <a href="http://bbrownsell.com/MyWeatherApp/" target="_blank">
+                    <img src="/Portfolio-Images/weather.jpg" alt="a weather app">
+                </a>
+                <div class="article-content">
+                    <h3>Weather App</h3>
+                    <div class="article-text">
+                        <p>This was my first project using an API to work with third party data. Here weather data is pulled in from openweathermap. This app was built using mainly Javascript and JSON which allowed me to practice working with objects. </p>
+                    </div>
+                </div> 
+                <div class="article-icon-container">
+                    <a href="https://github.com/bbrownsell/bbrownsell.github.io/tree/main/MyWeatherApp">
+                        <i class="fab fa-github-alt"></i>
+                        <p>GitHub</p>
+                    </a>
+                </div>
+                <div class="article-icon-container">
+                    <a href="http://bbrownsell.com/MyWeatherApp/">
+                        <i class="fas fa-cloud"></i>
+                        <p>Visit the site</p>
+                    </a>    
+                </div>
+            </article>
+
+            <article>
+                <a href="#" target="_blank">
+                    <img src="/Portfolio-Images/movie.jpg" alt="a movie database app">
+                </a>
+                <div class="article-content">
+                    <h3>Movie Database App</h3>
+                    <div class="article-text">
+                        <p>An application that pulls in movie and tv data using fetch() and Omdb's API. The search results are displayed on screen, and if you click on a movie it takes you to the corresponding movie page for further details. </p>
+                    </div>    
+                </div> 
+                <div class="article-icon-container">
+                    <a href="https://github.com/bbrownsell/bbrownsell.github.io/tree/main/MovieApp">
+                        <i class="fab fa-github-alt"></i>
+                        <p>GitHub</p>
+                    </a>
+                </div>
+                <div class="article-icon-container">
+                    <a href="">
+                        <i class="fas fa-cloud"></i>
+                        <p>Visit the site</p>
+                    </a>    
+                </div>
+            </article>
+
+            <article>
+                <!-- <a href="#" target="_blank">
+                    <img src="" alt="">
+                </a> -->
+                <div class="article-content">
+                    <!-- <h3></h3>
+                        
+                    <p></p>
+                </div>  -->
+                <div class="article-icon-container">
+                    <!-- <a href="">
+                        <i class="fab fa-github-alt"></i>
+                        <p>GitHub</p>
+                    </a> -->
+                </div>
+                <div class="article-icon-container">
+                    <!-- <a href="">
+                        <i class="fas fa-cloud"></i>
+                        <p>Visit the site</p>
+                    </a>     -->
+                </div>
+            </article>
+        </div>
+
+        <div class="skills">
+            <h2>Skills...</h2>
+            <div class="skills-imgs">
+                <img src="/Portfolio-Images/skills/1.png" alt="">
+
+            </div>
+        </div>
+        
+
+    </section>
+
+    <footer id="footer" class="portfolio-footer">
+        <p>Created by Ben Brownsell, &#169;<span id="year"> 2020</span></p>
+    </footer>
+
+    
+
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

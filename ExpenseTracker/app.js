@@ -10,13 +10,21 @@ submit.addEventListener('click', function(e) {
     let row = document.createElement('tr'); // create new table row. 
     let nameData = document.createElement('td'); // create new table data
     let dateData = document.createElement('td'); // create new table data
-    let amountData = document.createElement('td'); // create new table data
-    let buttonData = document.createElement('td'); // create new table data
-    let delBtn = document.createElement('button'); // create delete button
+    let amountData = document.createElement('td'); // create new amount td
+    // let totalData = document.createElement('td'); // create new total dd
+    let buttonData = document.createElement('td'); // create new button td
+    let delBtn = document.createElement('button'); // create actual delete button
+
+    // let amountValue = `£${amount.value}`;
+    // let sum = 0;
+
+    // for(let i = 0; i <= table.rows.length; i++) {
+    //     console.log(table.rows[i]);
+    // }
 
     nameData.innerText = name.value;
     dateData.innerText = date.value;
-    amountData.innerText = `£${amount.value}`;
+    amountData.innerText = amount.value;
     delBtn.className = 'delBtn';
     delBtn.innerText = 'Delete';
 
@@ -30,7 +38,8 @@ submit.addEventListener('click', function(e) {
     row.appendChild(amountData);
     row.appendChild(buttonData);
     buttonData.appendChild(delBtn);
-    
+
+
     if(name.value == '' ||
         date.value == '' ||
         amount.value == '') {
@@ -43,6 +52,5 @@ submit.addEventListener('click', function(e) {
     date.value = '';
     amount.value = '';
     }
-
 });
 
