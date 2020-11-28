@@ -2,6 +2,7 @@
 
 * {
   scroll-behavior: smooth;
+  /* overflow-x: auto; */
 }
 
 body {
@@ -10,9 +11,14 @@ body {
   color: #5a5a5a;
 }
 
+
+
+
 img {
   max-width: 100%;
+  position: unset;
 }
+
 
 /* CUSTOMIZE THE CAROUSEL
   -------------------------------------------------- */
@@ -135,7 +141,12 @@ img {
   ------------------------- */
 .find-us {
   padding: 5rem 0;
+  width: 95%;
 }
+
+/* .find-us-info {
+
+} */
 
 .find-us h2{
   margin-bottom: 1rem;
@@ -149,9 +160,15 @@ img {
   margin: 8rem 0; 
 }
 
+.iframe-container {
+  padding: 0;
+  height: 40vh;
+  margin-left: 2rem;
+}
+
 iframe {
-  width: 35rem;
-  height: 50vh;
+  width: 100%;
+  height: 100%;
   border: none;
 }
 
@@ -163,6 +180,7 @@ footer {
   font-size: 0.8rem;
   margin-bottom: -3rem;
   padding-bottom: 3rem;
+  width: 100%;
 }
 
 .footer h6 {
@@ -220,5 +238,35 @@ footer {
     .bd-placeholder-img-lg {
         font-size: 3.5rem;
     }
+}
+
+
+@media (max-width: 992px) {
+  .iframe-container {
+    padding: 1rem;
+    margin: 0 auto;
+    height: 50vh;
+    width: 90%;
+  }
+
+  .find-us-info {
+    padding: 1rem 0 0 1rem;
+    margin: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .iframe-container {
+    height: 40vh;
+  }
+
+}
+
+@media (max-width: 390px) {
+  .iframe-container {
+    height: 40vh;
+    width: 95%;
+
+  }
 }
 
