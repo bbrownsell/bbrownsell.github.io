@@ -6,18 +6,24 @@
 }
 
 /* 
-main blue #1E90FF;
 main gray #3d4449;
 optional green #488214;
 green pepper	#397D02	;
 */
 
-.container {
+.index-container,
+.contact-container {
     width: 85%;
     margin: 0 auto;
     color: #3d4449;
     position: relative;
     min-height: 100vh;
+}
+
+.portfolio-container {
+    width: 85%;
+    margin: 0 auto;
+    color: #3d4449;
 }
 
 /* ------ Header ------ */
@@ -193,6 +199,10 @@ article:nth-child(4)::after {
     margin-top: 1rem;
 }
 
+article:nth-child(5) > .article-content {
+    margin-bottom: 2rem;
+}
+
 article a {
     display: flex;
     justify-content: center;
@@ -210,7 +220,7 @@ article img {
     display: flex;
     flex-direction: column;
     width: 90%;
-    margin: 0 auto;
+    margin: 1.25rem auto;
 }
 
 .article-content h3 {
@@ -272,7 +282,7 @@ article img {
 
 /* ------- Contact ---------- */
 
-.contact-container {
+.contact-section {
     display: flex;
     justify-content: space-between;
 }
@@ -417,6 +427,27 @@ textarea::placeholder {
 
 /* -------------- MEDIA QUERIES ------------------- */
 
+@media (max-width: 1366px) and (orientation: landscape) {
+    .index-footer {
+        position: relative;
+        margin-top: 2rem;
+    }
+
+    .portfolio-container {
+        min-height: 255vh;
+    }
+
+    .contact-break {
+        margin-top: 12rem;
+    }
+
+    .contact-footer {
+        position: relative;
+        margin-top: 2rem;
+    }
+
+}
+
 @media (max-width: 1280px) {
     .index-footer {
         position: relative;
@@ -473,15 +504,41 @@ textarea::placeholder {
 }
 
 
-@media (max-width: 1024px) and (orientation : portrait) {
-    .container {
+@media (max-width: 1024px) and (orientation: portrait) {
+    .index-container {
         min-height: 115vh;
+    }
+
+    .portfolio-container {
+        min-height: 200vh;
     }
 
     .index-footer {
         margin-top: 5rem;
     }
+
+    .contact-break {
+        display: none;
+    }
+
+    .contact-footer {
+        position: relative;
+        margin-top: 11rem;
+    }
 }
+
+@media (max-width: 1024px) and (orientation: landscape) {
+    .contact-break {
+        display: none;
+    }
+
+    .contact-footer {
+        position: relative;
+        margin-top: 4rem;
+    }
+}
+
+
 
 @media (max-width: 992px) {
     .main-text {
@@ -529,9 +586,22 @@ textarea::placeholder {
     }
 }
 
-@media (max-width: 768px) and (orientation : portrait) {
-    .container {
+@media (max-width: 768px) and (orientation: portrait) {
+    .index-container {
         min-height: 140vh;
+    }
+
+    .portfolio-container {
+        min-height: 220vh;
+    }
+
+    .contact-break {
+        display: none;
+    }
+
+    .contact-footer {
+        position: relative;
+        margin-top: 11rem;
     }
 
     .index-footer {
@@ -539,14 +609,39 @@ textarea::placeholder {
     }
 }
 
-@media (max-width: 720px) and (orientation : portrait) {
-    .container {
+@media (max-width: 731px) and (orientation: landscape) {
+    .contact-break {
+        display: none;
+    }
+
+    .contact-footer {
+        width: 100%;
+        position: relative;
+    }
+}
+
+@media (max-width: 720px) and (orientation: portrait) {
+    .index-container {
         min-height: 130vh;
+    }
+
+    .portfolio-container {
+        min-height: 195vh;
+    }
+
+    .contact-break {
+        display: none;
     }
 
     .index-footer {
         margin-top: 5rem;
     }
+
+    .contact-footer {
+        position: relative;
+        margin-top: 11rem;
+    }
+
 }
 
 @media (max-width: 700px) {
@@ -579,7 +674,7 @@ textarea::placeholder {
         flex-direction: column;
     }
 
-    .contact-container {
+    .contact-section {
         flex-direction: column;
         align-items: center;
         margin-top: -2rem;
@@ -610,6 +705,28 @@ textarea::placeholder {
     .contact-footer {
         position: relative;
         margin-top: 2rem;
+    }
+}
+
+@media (max-width: 600px) and (orientation: portrait) {
+    .index-container {
+        min-height: 135vh;
+    }
+
+    .portfolio-container {
+        min-height: 380vh;
+    }
+
+    .contact-container {
+        min-height: 110vh;
+    }
+
+    .index-footer {
+        margin-top: 5rem;
+    }
+
+    .contact-footer {
+        margin-top: 3rem;
     }
 }
 
