@@ -415,7 +415,7 @@ textarea::placeholder {
 .contact-footer {
     position: absolute;
     bottom: 0;
-    padding-bottom: 0.5rem;
+    padding-bottom: 1.75rem;
 }
 
 .portfolio-footer {
