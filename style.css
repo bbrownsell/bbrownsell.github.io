@@ -131,7 +131,6 @@ green pepper	#397D02	;
     text-decoration: none;
     padding: 0.7rem;
     
-    
 }
 
 .learnBtn:hover {
@@ -150,7 +149,7 @@ green pepper	#397D02	;
 }
 
 .about-break {
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 
 /* -------- Portfolio Page ---------- */
@@ -799,5 +798,3 @@ textarea::placeholder {
         margin-bottom: 9rem;
     }
 }
-
-
